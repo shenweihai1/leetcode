@@ -1,3 +1,5 @@
+
+# 
 class Solution(object):
     def shortestBridge(self, A):
         """
