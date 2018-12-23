@@ -1,4 +1,5 @@
 
+# 
 # https://buptwc.com/2018/10/15/Leetcode-924-Minimize-Malware-Spread/
 class Solution(object):
  	def minMalwareSpread(self, graph, initial):
