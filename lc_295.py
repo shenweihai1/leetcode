@@ -27,7 +27,7 @@ class Heap(object):
     @property
     def first(self):
         # if no first, throw error
-        return sys.maxsize - self.vals[0] if self.ttype == 1 else self.vals[0]
+        return int(sys.maxsize - self.vals[0]) if self.ttype == 1 else self.vals[0]
 
     @property
     def size(self):
