@@ -1,7 +1,6 @@
 import heapq
 import sys
  
- 
 # easy implementation of min-heap and max-heap
 class Heap(object):
  
