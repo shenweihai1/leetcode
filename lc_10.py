@@ -1,4 +1,5 @@
 
+# regular
 class Solution(object):
     def isMatch(self, s, pattern):
         """
