@@ -1,4 +1,5 @@
 
+#
 # https://buptwc.com/2018/10/21/Leetcode-928-Minimize-Malware-Spread-II/
 import collections
 class Solution(object):
