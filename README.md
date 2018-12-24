@@ -1,6 +1,7 @@
 # LeetCode
 ### 再思考
 1. Leetcode 898
+2. Leetcode 847
 
 ### 有意思
 1. Leetcode 236
