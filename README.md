@@ -6,3 +6,6 @@
 ### 有意思
 1. Leetcode 236
 2. Leetcode 910 -- 从宏观思考问题
+
+### 注意代码
+1. Leetcode 133
