@@ -4,6 +4,8 @@
 2. Leetcode 847
 3. Leetcode 523 - brute force solution 
 4. Leetcode 621
+5. Leetcdoe 324 wiggle sort - 之前想的有问题
+6. Leetcode 76, 301, 799, 787, 907, 926, 927, 745, 813
 
 ### 有意思
 1. Leetcode 236
