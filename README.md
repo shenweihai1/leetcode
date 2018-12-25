@@ -7,6 +7,7 @@
 5. Leetcode 854
 5. Leetcdoe 324 wiggle sort - 之前想的有问题
 6. Leetcode 76, 301, 799, 787, 907, 926, 927, 745, 813
+7. KMP solution
 
 ### 有意思
 1. Leetcode 236
