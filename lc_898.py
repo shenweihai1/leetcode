@@ -1,13 +1,12 @@
 
 
-# https://www.youtube.com/watch?v=E_0BhmAUVNQ&feature=youtu.be
 class Solution:
     def subarrayBitwiseORs(self, A):
         cur = set()
         ans = set()
         for a in A:
             cur = {a | b for b in cur} | {a}
-            ans |= cur      
+            ans |= cur   # set + set     
         return len(ans)
 
 
