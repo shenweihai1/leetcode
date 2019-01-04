@@ -4,13 +4,11 @@ class Solution(object):
 
     def Soduku(self, matrix):
 
-        def options(cell, matrix):
-            i, j = cell
-            return list(set(list(range(1, 10))) - set(matrix[i] + [matrix[k][j] for k in range(9)]))
+        options = lambda i, j, matrix: list(set(list(range(1, 10))) - set(matrix[i] + [matrix[k][j] for k in range(9)]))
 
         def dfs(em_cells, idx, matrix):
             cell = em_cells[idx]
-            opts = options(cell, matrix)
+            opts = options(cell[0], cell[1], matrix)
 
             for o in opts:
                 matrix[cell[0]][cell[1]] = o
@@ -38,6 +36,6 @@ if __name__ == "__main__":
             [1, 3, 0, 0, 0, 0, 2, 5, 0],
             [0, 0, 0, 0, 0, 0, 0, 7, 4],
             [0, 0, 5, 2, 0, 6, 3, 0, 0]]
-            
+
     obj = Solution()
     print(obj.Soduku(grid))
