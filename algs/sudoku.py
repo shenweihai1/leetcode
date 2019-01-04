@@ -1,11 +1,11 @@
 
-
 class Solution(object):
 
     def Soduku(self, matrix):
-
+        # get optional values for the cell
         options = lambda i, j, matrix: list(set(list(range(1, 10))) - set(matrix[i] + [matrix[k][j] for k in range(9)]))
 
+        # dfs
         def dfs(em_cells, idx, matrix):
             cell = em_cells[idx]
             opts = options(cell[0], cell[1], matrix)
