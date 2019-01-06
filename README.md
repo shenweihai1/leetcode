@@ -1,8 +1,5 @@
 # LeetCode
 ### 再思考
-7. KMP solutionm
-8. Time complexity for BFS and DFS
-9. Monotonic  
 
 ### 有意思
 1. Leetcode 236
@@ -13,6 +10,7 @@
 ### 注意代码
 1. Leetcode 133
 2. Leetcode 787 - Cheapest Flights Within K Stops and Time complexity
+3. Leetcode 76 - not efficient solution
 
 ### 重要
 1. Leetcode 215 - find the nth largest number
