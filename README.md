@@ -1,8 +1,5 @@
 # LeetCode
 ### 再思考
-2. Leetcode 847
-5. Leetcode 854
-6. Leetcode 76, 813
 7. KMP solutionm
 8. Time complexity for BFS and DFS
 9. Monotonic  
@@ -21,3 +18,4 @@
 1. Leetcode 215 - find the nth largest number
 2. Leetcode 324 - wiggle sort
 3. Leetcode 75 - 3-ways partition
+4. Leetcode 847
