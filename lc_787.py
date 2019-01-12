@@ -7,7 +7,26 @@ class Solution(object):
         graph = collections.defaultdict(list)
         for ssrc, ddst, pprice in flights:
             graph[ssrc].append((ddst, pprice))
-        return self.Sol1(n, graph, src, dst, stops)
+        # return self.Sol1(n, graph, src, dst, stops)
+        return self.Sol2(n, graph, src, dst, stops)
+
+    # using DFS
+    def Sol2(self, n, graph, src, dst, K):
+        def dfs(graph, cur, vis, stops, price):
+          if stops == K + 1 or cur == dst:
+              ans[0] = min(ans[0], price) if cur == dst else ans[0]
+              return 
+
+          for ch, p in graph[cur]:
+              if ch not in vis and price + p < ans[0]:  # Add more restrict
+                  vis.append(ch)  # it's not useful
+                  dfs(graph, ch, vis, stops + 1, price + p)
+                  vis.pop()
+
+        vis = [src]
+        ans = [float("inf")]  # using mutable variables
+        dfs(graph, src, vis, 0, 0)
+        return -1 if ans[0] == float("inf") else ans[0]
 
     # using BFS => best way
     # status => (node, price)
