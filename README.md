@@ -1,4 +1,5 @@
 ###### LeetCode list
+```
 1. Leetcode 236
 2. Leetcode 910 -- 从宏观思考问题
 3. Leetcode 523 -- 利用了整除的特性, a/c == b/c => (a-b)/c == 0
@@ -9,5 +10,6 @@
 8. Leetcode 787 - Cheapest Flights Within K Stops and Time complexity
 9. Leetcode 847
 10. Leetcode 76 - two pointers
+```
 
 
