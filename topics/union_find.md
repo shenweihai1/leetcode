@@ -7,14 +7,16 @@ class UnionFind(object):
         self.father = {u: u for u in range(1, N + 1)}
 
     # O(1)
+    def union(self, u, v):
+        self.father[self.find(u)] = self.find(v)
+    
+    # O(1)
     def find(self, u):
-        if u == self.father[u]: return u
+        if u == self.father[u]:
+            return u
+        
         self.father[u] = self.find(self.father[u])
         return self.father[u]
-
-    # O(1)
-    def union(self, u, v):
-        self.father[u] = v
 ```
 
 
