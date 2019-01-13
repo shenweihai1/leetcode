@@ -17,3 +17,8 @@
 1. https://leetcode.com/problems/minimum-area-rectangle-ii/solution/
 2. https://leetcode.com/problems/split-linked-list-in-parts/solution/
 ```
+
+###### Common questions
+```
+1. Leetcode 235, common ancestor
+```
