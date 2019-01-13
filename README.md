@@ -13,5 +13,7 @@
 ```
 
 ###### Concise code
+```
 1. https://leetcode.com/problems/minimum-area-rectangle-ii/solution/
 2. https://leetcode.com/problems/split-linked-list-in-parts/solution/
+```
