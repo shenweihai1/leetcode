@@ -2,6 +2,39 @@
 print(ord('a')) # 97
 print(chr(97)) # 'a'
 
+# order dictionary
+# OrderedDict：保持插入时候的顺序，更新不改变顺序xx
+cd = {23: 1, 42: 1, 11: -1, 2.5:1, -1:4}
+od = collections.OrderedDict(sorted(cd.items(), key=lambda x:x[0]))
+print(od) # OrderedDict([(-1, 4), (2.5, 1), (11, -1), (23, 1), (42, 1)])
+
+# 26位整数表示字母
+mask |= 1 << (ord(w) - ord('a'))   # 设置某位为1
+
+# 1, 0 交换
+1 ^ 1 = 0
+0 ^ 1 = 1
+
+ac = [1, 2, 4]
+bisect.insort(ac, 2.4)
+print(ac)  # [1, 2, 2.4, 4]
+
+# all values true
+l = [1, 3, 4, 5]
+print(all(l))
+# all values false
+l = [0, False]
+print(all(l))
+# one false value
+l = [1, 3, 4, 0]
+print(all(l))
+# one true value
+l = [0, False, 5]
+print(all(l))
+# empty iterable
+l = []
+print(all(l))
+
 # sort two columns
 ans = [(1, 2), (1, 1), (-1, 2)]
 ans = sorted(ans, key=lambda x: (-x[1], -x[0]))
