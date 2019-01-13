@@ -1,4 +1,4 @@
-##### dfs
+### dfs
 ```
 vis = []  # visited nodes
 graph = {}
@@ -16,7 +16,7 @@ def dfs(u, vis):
 Time complexity: O(V + E) + O(graph + retrieval of neighbours)
 Space complexity: O(V) + O(graph)
 
-##### bfs
+### bfs
 ```
 def bfs():
     q = [u]  # initial node
