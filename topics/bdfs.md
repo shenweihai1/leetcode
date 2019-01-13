@@ -1,25 +1,37 @@
+##### dfs
 ```
-def dfs(node, vis):
-    for cd in range(cds):  # loop the children of visiting node
-        if cd not in vis:
-            if cd == enabled:
-                vis.append(v)
-                dfs(cd, vis)
+vis = []  # visited nodes
+graph = {}
 
-def bfs(node):
-    q = [node]
-    vis = []
-    steps = 0
+def dfs(u, vis):
+    """
+    @param: u => initial node
+    """
+    # if eage cases, continue
+
+    for v in graph[u]:  # neighbours of the node
+        if v in vis: continue
+        vis.append(v) and dfs(v, vis)
+```
+Time complexity: O(V + E) + O(graph + retrieval of neighbours)
+Space complexity: O(V) + O(graph)
+
+##### bfs
+```
+def bfs():
+    q = [u]  # initial node
+    vis = []  # visited nodes
+    steps = 0  # using for minimum distance
     graph = {}
     while q:
         size = len(q)
         while size > 0:
-            node = q.pop(0)
-
-            for next in graph[node]
-                if next not in visited:
-                    visited.append(next)
-                    q.append(next)
+            u = q.pop(0)
+            for v in graph[u]  # # neighbours of the node
+                if v in visited: continue  # or steps <= K
+                vis.append(v) and q.append(v)
             size -= 1
         steps += 1
 ```
+Time complexity: O(V + E) + O(graph + retrieval of neighbours)
+Space complexity: O(V) + O(graph)
