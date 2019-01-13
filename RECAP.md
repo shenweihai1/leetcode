@@ -20,5 +20,6 @@
 
 ###### Common questions
 ```
-1. Leetcode 235, common ancestor
+1. Leetcode 235, Common ancestor
+2. Leetcode 490, The maze
 ```
