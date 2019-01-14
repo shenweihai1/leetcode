@@ -16,10 +16,11 @@
 ```
 1. https://leetcode.com/problems/minimum-area-rectangle-ii/solution/
 2. https://leetcode.com/problems/split-linked-list-in-parts/solution/
+3. https://leetcode.com/problems/binary-subarrays-with-sum/solution/ prefix sum
 ```
 
 ###### Common questions
 ```
 1. Leetcode 235, Common ancestor
-2. Leetcode 490, The maze
+2. Leetcode 490, The maze: https://leetcode.com/articles/the-maze/
 ```
