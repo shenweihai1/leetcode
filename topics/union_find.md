@@ -32,7 +32,9 @@ def query(): 当前集合个数
 题目2: Minimum spanning tree
 
 LeetCode: https://leetcode.com/problemset/all/?topicSlugs=union-find
+```
 `Leetcode`: Number of Islands
 `Leetcode`: Graph Valid Tree
 `Leetcode`: Accounts Merge
 `Leetcode`: Redundant Connection
+```
