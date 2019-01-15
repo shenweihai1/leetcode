@@ -5,4 +5,5 @@
 3. Google Docs
 4. 1i3
 5. Python 技巧
+6. https://leetcode.com/problems/increasing-triplet-subsequence/
 ```
