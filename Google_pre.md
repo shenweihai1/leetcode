@@ -1,15 +1,20 @@
-1. 花了五六分钟让我介绍了下自己的经历和做过的项目什么的，没有针对项目问什么问题
+##### 花五六分钟让我介绍了下自己的经历和做过的项目什么的，没有针对项目问什么问题
+```
 4 asu
 campus,intern, twitter-like platform, this
 ganji, features 
 baidu, team, app, two duties, request speed,
 bytedance, hottest, for the moment, 1 million qps
+```
 
-2. 问问题
+##### 问问题
+```
 1. How many interns does the Google need for this summer
 2. How to decide which people to which department
+```
 
-面试:
+##### 面试
+```
 1. mock test cases
 2. 多思考 edge case
 3. 一定要记得多交流，多说自己的想法
@@ -20,11 +25,15 @@ bytedance, hottest, for the moment, 1 million qps
 8. 很感谢然后第二轮面的不好能不能再给轮Bonus Interview
 9. Tree基本都可以用递归解决
 10. 常见算法：二分，dfs/bfs，递归，dp
+```
 
-问题:
+##### 问题
+```
 1. assume that all inputs are consist of lowercase letters a-z
+```
 
-Related problems:
+##### Related problems:
+```
 403. Frog Jump
 437. Path Sum
 160. Intersection of Two Linked Lists
@@ -65,8 +74,7 @@ Topological Sort
 3. topological sort: https://www.cs.usfca.edu/~galles/visualization/TopoSortDFS.html
 4. 给一个长方形框（宽和高）和一段话，问能把整段话放进框里的最大字号，你可以调用两个现有的函数，分别返回每个字符的宽度和字符高度 - 二分
 5. Binary Tree 删除其中的一些节点，返回所有剩下子树
-
-
+```
 
 
 

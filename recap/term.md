@@ -28,3 +28,4 @@ GB: gigabyte
 对称的: Symmetrical
 字符：character
 有向无环图：Directed Acyclic Graph
+等比例抽样算法: reservoir sampling
