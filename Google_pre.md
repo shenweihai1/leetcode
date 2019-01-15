@@ -25,6 +25,7 @@ bytedance, hottest, for the moment, 1 million qps
 8. 很感谢然后第二轮面的不好能不能再给轮Bonus Interview
 9. Tree基本都可以用递归解决
 10. 常见算法：二分，dfs/bfs，递归，dp
+11. take interviewer tips seriously
 ```
 
 ##### 问题
@@ -74,6 +75,7 @@ Topological Sort
 3. topological sort: https://www.cs.usfca.edu/~galles/visualization/TopoSortDFS.html
 4. 给一个长方形框（宽和高）和一段话，问能把整段话放进框里的最大字号，你可以调用两个现有的函数，分别返回每个字符的宽度和字符高度 - 二分
 5. Binary Tree 删除其中的一些节点，返回所有剩下子树
+6. QuickSort/MergeSort
 ```
 
 

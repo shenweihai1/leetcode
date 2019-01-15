@@ -13,6 +13,7 @@ GB: gigabyte
 迭代器: iterator
 全排序: permutation
 三元的: Triplet, 一元的: unary
+蛮力法：the brute force solution
 毫秒：Millisecond
 转置：transpose a matrix, transposition
 拓扑：topology 
