@@ -1,5 +1,6 @@
 #-*- coding:utf-8
 # 主要思想：遍历到叶子节点并且sum减去每个节点的value等于0即为目标path
+# Leetcode: https://leetcode.com/problems/path-sum-ii/
 class Solution(object):
     def pathSum(self, root, sum):
         """
