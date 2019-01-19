@@ -16,7 +16,7 @@ class Solution:
             size = len(q)
             while size > 0:
                 oi, oj, uniq = q.pop(0)
-                vis.append((oi, oj, uniq))
+                vis.append((oi, oj, uniq))  # 该节点不访问，访问其叶子节点
                 for d in range(4):
                     i, j = oi + dirs[d], oj + dirs[d + 1]
                     if not (0 <= i <= M - 1) or not (0 <= j <= N - 1): continue

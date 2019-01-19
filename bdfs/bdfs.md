@@ -11,7 +11,7 @@ def dfs(u, vis):
 
     for v in graph[u]:  # neighbours of the node
         if v in vis: continue
-        vis.append(v) and dfs(v, vis)
+        vis.append(v) or dfs(v, vis)
 ```
 Time complexity: O(V + E) + O(graph + retrieval of neighbours)
 Space complexity: O(V) + O(graph)
@@ -27,8 +27,8 @@ def bfs():
         size = len(q)
         while size > 0:
             u = q.pop(0)
-            vis.append(u)  # visited
-            for v in graph[u]  # # neighbours of the node
+            vis.append(v)  # 该节点不访问，访问其叶子节点
+            for v in graph[u]  # neighbours of the node
                 if v in visited: continue  # or steps <= K
                 q.append(v)
             size -= 1
