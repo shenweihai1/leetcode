@@ -1,6 +1,6 @@
 #-*- coding:utf-8
 # https://github.com/joowani/binarytree
-# FIXME 缺后续遍历
+# FIXME 缺后序遍历
 class Solution:
     def __init__(self):
         pass
