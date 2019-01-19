@@ -15,6 +15,11 @@ mask |= 1 << (ord(w) - ord('a'))   # 设置某位为1
 1 ^ 1 = 0
 0 ^ 1 = 1
 
+# merge
+from heapq import merge
+ac, bc = [1, 2, 4], [0, 1.1, 1.2, 4.2]
+list(merge(ac, bc))  # [0, 1, 1.1, 1.2, 2, 4, 4.2]
+
 ac = [1, 2, 4]
 bisect.insort(ac, 2.4)
 print(ac)  # [1, 2, 2.4, 4]

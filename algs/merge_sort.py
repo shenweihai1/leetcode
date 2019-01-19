@@ -20,7 +20,7 @@ class Solution:
             ans = ans[0:idx] + [u] + ans[idx:]
         return ans
 
-
+        
 if __name__ == "__main__":
     obj = Solution()
     print(obj.mergeSort([1,2.1,31,4,5,6,7,0]))
