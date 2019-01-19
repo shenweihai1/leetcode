@@ -1,7 +1,7 @@
 
 #-*- coding:utf-8
 class Solution:
-    def targetPath(self, root):
+    def targetPath(self, root, target):
         pass
 
 
