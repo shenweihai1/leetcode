@@ -14,5 +14,3 @@ class Solution(object):
             if i != '0':
                 is_zero = False
         return "0" if is_zero else "".join(nums)
-
-        
