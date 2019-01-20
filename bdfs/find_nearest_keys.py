@@ -24,7 +24,7 @@ class Solution:
                     if u in vis: continue
 
                     if matrix[i][j] == 3:  # key
-                        ans[uniq] = steps + 1
+                        ans[uniq] = min(ans[uniq], steps + 1) if ans[uniq] > -1 else steps + 1
                         continue
 
                     if matrix[i][j] == 1: continue  # wall
