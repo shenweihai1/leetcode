@@ -67,6 +67,12 @@ Topological Sort
 159. Longest Substring with At Most Two Distinct Characters (Hard) 
 265. Paint House II
 360. Sort Transformed Array
+139. Word Break
+133. Clone Graph
+239. Sliding Window Maximum
+17. Letter Combinations of a Phone Number
+516. Longest Palindromic Subsequence
+332. Reconstruct Itinerary
 531. Lonely Pixel
 308. Range Sum Query 2D
 562. Longest Line of Consecutive One in Matrix - segment tree
@@ -76,7 +82,7 @@ Topological Sort
 3. topological sort: https://www.cs.usfca.edu/~galles/visualization/TopoSortDFS.html
 4. 给一个长方形框（宽和高）和一段话，问能把整段话放进框里的最大字号，你可以调用两个现有的函数，分别返回每个字符的宽度和字符高度 - 二分
 5. Binary Tree 删除其中的一些节点，返回所有剩下子树
-6. QuickSort/MergeSort
+6. QuickSort
 ```
 
 
