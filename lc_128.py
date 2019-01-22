@@ -6,34 +6,19 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        if len(nums) == 0:
-            return 0
-
-        h = {elem: 1 for elem in nums}
+        if len(nums) == 0: return 0
         
-        vis = {}
+        vis = [0] * len(nums)
+        h = {num: idx for idx, num in enumerate(nums)}
         ans = 1
-        for num in nums:
-            if num in vis:
-                continue 
-                
-            vis[num] = 1
-            cur_ans = 1
-            
-            tmp = num
-            while tmp - 1 in h:
-                cur_ans += 1
-                tmp -= 1
-                vis[tmp] = 1
-            
-            tmp = num
-            while tmp + 1 in h:
-                cur_ans += 1
-                tmp += 1
-                vis[tmp] = 1
-            
-            ans = max(cur_ans, ans)
         
-        return ans
-                
+        for idx, num in enumerate(nums):
+            if vis[idx] == 1: continue
             
+            tmp, l, r = 1, num - 1, num + 1
+            while l in h: vis[h[l]], tmp, l = 1, tmp + 1, l - 1
+            while r in h: vis[h[r]], tmp, r = 1, tmp + 1, r + 1
+            
+            ans = max(tmp, ans)
+                
+        return ans
