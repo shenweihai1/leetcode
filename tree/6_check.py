@@ -24,10 +24,10 @@ class Solution(object):
 
             lmax, lmin = helper(root.left)
             rmax, rmin = helper(root.right)
-            if lmax and rmin and not (lmax < root.value < rmin):
+            if (lmax and lmax >= root.value) or (rmin and rmin <= root.value):
                 ans[0] = False
-
-            return max(lmax or -float("inf"), rmax or -float("inf"), root.value), min(lmin or float("inf"), rmin or float("inf"), root.value)
+                
+            return max(rmax or -float("inf"), root.value), min(lmin or float("inf"), root.value)
 
         helper(root)
         return ans[0]
