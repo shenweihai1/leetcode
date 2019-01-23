@@ -1,4 +1,5 @@
 
+# Time complexity: O(N), Space complexity: O(N)
 class Solution(object):
     def canFinish(self, numCourses, prerequisites):
         graph = collections.defaultdict(list)
