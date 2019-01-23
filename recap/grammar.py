@@ -8,6 +8,15 @@ cd = {23: 1, 42: 1, 11: -1, 2.5:1, -1:4}
 od = collections.OrderedDict(sorted(cd.items(), key=lambda x:x[0]))
 print(od) # OrderedDict([(-1, 4), (2.5, 1), (11, -1), (23, 1), (42, 1)])
 
+# heapq
+# https://docs.python.org/2/library/heapq.html
+count = collections.Counter(nums)   
+topK = heapq.nlargest(k, count.keys(), key=count.get)
+
+heapq.heappush(heap, item) 
+heapq.heapreplace(heap, item) # Pop and return the smallest item from the heap, and also push the new item.
+
+
 # 26位整数表示字母
 mask |= 1 << (ord(w) - ord('a'))   # 设置某位为1
 

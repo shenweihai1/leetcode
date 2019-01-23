@@ -11,7 +11,8 @@ def dfs(u, vis):
 
     for v in graph[u]:  # neighbours of the node
         if v in vis: continue
-        vis.append(v) or dfs(v, vis)
+        vis.append(v)
+        dfs(v, vis)
 ```
 Time complexity: O(V + E) + O(graph + retrieval of neighbours)
 Space complexity: O(V) + O(graph)

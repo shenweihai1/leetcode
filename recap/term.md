@@ -12,7 +12,7 @@
 GB: gigabyte
 迭代器: iterator
 全排序: permutation
-三元的: Triplet, 一元的: unary
+三元的: Triplet, 一元的: unary, 四元的：quadruplets
 蛮力法：the brute force solution
 毫秒：Millisecond
 转置：transpose a matrix, transposition
@@ -31,3 +31,4 @@ GB: gigabyte
 有向无环图：Directed Acyclic Graph
 等比例抽样算法: reservoir sampling
 小写字母：lowercase letters
+分摊分析: Amortized analysis

@@ -12,11 +12,13 @@
 8. Leetcode 787 - Cheapest Flights Within K Stops and Time complexity
 9. Leetcode 847
 10. Leetcode 76 - two pointers
+11. Leetcode 907 - using Monotonic stack
 ```
 
 ###### Repeat
 ```
 1. Leetcode 334, Increasing Triplet Subsequence
+2. Leetcode 921, Minimum Add to Make Parentheses Valid
 ```
 
 ###### Concise code
