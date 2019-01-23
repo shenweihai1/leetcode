@@ -19,7 +19,7 @@ class Solution:
             return self.visited[node]
 
         root = UndirectedGraphNode(node.label)
-        self.visited[node] = root
+        self.visited[node] = root  # because for circle
         for elem in node.neighbors:
             root.neighbors.append(self.cloneGraph(elem))
         return root
