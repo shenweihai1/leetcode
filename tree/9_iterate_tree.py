@@ -1,6 +1,6 @@
 #-*- coding:utf-8
 # https://github.com/joowani/binarytree
-# FIXME 缺后序遍历
+# FIXME
 class Solution:
     def __init__(self):
         pass
@@ -40,6 +40,12 @@ class Solution:
             cur = q.pop()
             print(cur.value),
             cur = cur.right
+
+    def postorder(self, root):
+        pass
+
+    def postorder_iterator(self, root):
+        pass
 
 
 if __name__ == "__main__":
