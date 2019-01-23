@@ -16,6 +16,8 @@ topK = heapq.nlargest(k, count.keys(), key=count.get)
 heapq.heappush(heap, item) 
 heapq.heapreplace(heap, item) # Pop and return the smallest item from the heap, and also push the new item.
 
+heap = [1, 3, 4, 5]
+heapq.heapify(heap)
 
 # 26位整数表示字母
 mask |= 1 << (ord(w) - ord('a'))   # 设置某位为1
