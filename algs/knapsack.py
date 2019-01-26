@@ -1,4 +1,6 @@
 #-*- coding:utf-8
+# basic: 0-1背包, 即物品只能放0 or 1次
+# unbounded: 完全背包, 即物品只能放0 - 无穷次
 
 class Solution:
     # time complexity: O(2 ^ N)
