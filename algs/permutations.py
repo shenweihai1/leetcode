@@ -1,7 +1,7 @@
 
 # Time complexity: N * N * (N - 1) * (N - 2) * ..... 1
 class Solution:
-    def premutations(self, A):
+    def permutations(self, A):
         ans = []
     
         def helper(idx):
@@ -21,4 +21,4 @@ class Solution:
 if __name__ == "__main__":  # Double quotation
     obj = Solution()
     A = [1, 2, 3] # 6
-    print(obj.premutations(A))
+    print(obj.permutations(A))
