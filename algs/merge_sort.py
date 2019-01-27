@@ -1,27 +1,32 @@
 #-*- coding:utf-8
-from heapq import merge
-import bisect
 
 class Solution:
+    # time complexity: N * log(N)
     def mergeSort(self, nnums):
+        def merge(A, B):
+            ans = []
+            i, j = 0, 0
+            while i < len(A) and j < len(B): 
+                if A[i] < B[j]:
+                    ans.append(A[i])
+                    i += 1 
+                else:
+                    ans.append(B[j])
+                    j += 1
+
+            ans += A[i:]
+            ans += B[j:]
+            return ans
+        
         N = len(nnums)
         if N <= 1:
             return nnums
-        return list(merge(self.mergeSort(nnums[0:N/2]), self.mergeSort(nnums[N/2:])))
-
-    def mergeSortAdv(self, nnums):
-        if len(nnums) <= 1:
-            return []
-
-        ans, rest = [nnums[0]], nnums[1:]
-        while rest:
-            u = rest.pop()
-            idx = bisect.bisect_right(ans, u)
-            ans = ans[0:idx] + [u] + ans[idx:]
-        return ans
+        
+        l = self.mergeSort(nnums[:N//2])
+        r = self.mergeSort(nnums[N//2:])
+        return list(merge(l, r))
 
         
 if __name__ == "__main__":
     obj = Solution()
     print(obj.mergeSort([1,2.1,31,4,5,6,7,0]))
-    print(obj.mergeSortAdv([1,2.1,31,4,5,6,7,0]))
