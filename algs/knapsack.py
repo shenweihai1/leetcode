@@ -22,11 +22,10 @@ class Solution:
     # time complexity: O(N * M) 
     def basic_dp(self, W, V, target):
         # dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - W[i]] + V[i])
-        total_W = sum(W)
-        dp = [[0] * (total_W + 1) for _ in range(len(W))]
+        dp = [[0] * (target + 1) for _ in range(len(W))]
         ans = -float("inf")
         for i in range(len(W)):
-            for j in range(0, total_W + 1):
+            for j in range(0, target + 1):
                 if i == 0:
                     dp[0][j] = V[0] if j >= W[0] else 0
                     continue
@@ -49,11 +48,10 @@ class Solution:
     # time complexity: O(N * M * avg(j // W[i])) 
     def unbounded_dp(self, W, V, target):
         # dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - n * W[i]] + n * V[i])
-        total_W = sum(W)
-        dp = [[0] * (total_W + 1) for _ in range(len(W))]
+        dp = [[0] * (target + 1) for _ in range(len(W))]
         ans = -float("inf")
         for i in range(len(W)):
-            for j in range(0, total_W + 1):
+            for j in range(0, target + 1):
                 if i == 0:
                     dp[0][j] = max([k * V[0] for k in range(j // W[0] + 1)])
                     continue
@@ -65,7 +63,11 @@ if __name__ == "__main__":
     obj = Solution()
     W = [1, 1, 2, 2]
     V = [1, 3, 4, 5]
-    target = 4
+    target = 14
+    # V = [1,60,100,120]
+    # W = [1,10,20,30]
+    # target = 50
+
     print(obj.basic(W, V, target))
     print(obj.basic_dp(W, V, target))
     print(obj.unbounded(W, V, target))
