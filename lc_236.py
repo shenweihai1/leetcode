@@ -26,6 +26,4 @@ class Solution(object):
         if l and r:
             return root
         
-        return l or (r or None)
-        
-        
+        return l or r 

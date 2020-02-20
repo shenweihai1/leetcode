@@ -2,6 +2,7 @@
 ###### List
 ```
 1. Leetcode 236, lowest common ancestor
+   https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
 2. Leetcode 490, The maze: https://leetcode.com/articles/the-maze/
 3. Leetcode 787
 4. Leetcode 847 - Shortest Path Visiting All Nodes
@@ -9,5 +10,7 @@
 ```
 
 ##### tricks
+```
 1. if (a - b) % M == 0, then a % M == b % M
->> https://leetcode.com/problems/continuous-subarray-sum/submissions/
+   https://leetcode.com/problems/continuous-subarray-sum/submissions/
+```
