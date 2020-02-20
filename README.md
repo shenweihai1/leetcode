@@ -3,6 +3,9 @@
 ```
 1. Leetcode 236, lowest common ancestor
    https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
+2. Leetcode 652, Find duplicate subtrees 
+   https://leetcode.com/problems/find-duplicate-subtrees/
+
 2. Leetcode 490, The maze: https://leetcode.com/articles/the-maze/
 3. Leetcode 787
 4. Leetcode 847 - Shortest Path Visiting All Nodes
