@@ -1,5 +1,3 @@
-
-
 class Solution(object):
     def change(self, amount, coins):
         """
@@ -10,7 +8,6 @@ class Solution(object):
         if len(coins) == 0:
         	return 1 if amount == 0 else 0
 
-        coins = sorted(coins)
         dp = []
         # dp[amount][idx]
         # amount starting from 1
@@ -22,15 +19,8 @@ class Solution(object):
         	if j % coins[-1] == 0:  # integer division
         		dp[j][-1] = 1
 
-        for i in range(1, amount + 1):
-        	for j in range(len(coins) - 1)[::-1]:
-        		dp[i][j] = dp[i][j + 1] + (dp[i - coins[j]][j] if i - coins[j] >= 0 else 0)
+        for j in range(1, amount + 1):
+        	for i in range(len(coins) - 1)[::-1]:
+        		dp[j][i] = dp[j][i + 1] + (dp[j - coins[i]][i] if j - coins[i] >= 0 else 0)
 
         return dp[amount][0]
-
-
-if __name__ == "__main__":
-	obj = Solution()
-	# print(obj.change(25, [1, 2, 5]))
-	print(obj.change(10, [5]))
-        
