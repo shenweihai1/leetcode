@@ -9,16 +9,7 @@ class Solution(object):
         for ssrc, ddst, pprice in flights:
             graph[ssrc].append((ddst, pprice))
         # return self.Sol1(n, graph, src, dst, stops)
-        # return self.Sol2(n, graph, src, dst, stops)
-        return self.Sol3(n, flights, src, dst, stops)
-
-    # DP
-    def Sol3(self, n, flights, src, dst, stops):
-        # def: dp[k, v] = min cost from src to v with up to k stops
-        # equ: dp[k, v] = min(dp[k-1, v], dp[k-1, u] + cost[u, v])
-        # init: dp[1, u] = 
-        # ans: dp[k, dst]
-        pass
+        return self.Sol2(n, graph, src, dst, stops)
 
     # using DFS
     def Sol2(self, n, graph, src, dst, K):
@@ -39,6 +30,7 @@ class Solution(object):
         return -1 if ans[0] == float("inf") else ans[0]
 
     # using BFS => best way
+    # Time complexity: O(n ^ K)
     # status => (node, price)
     def Sol1(self, n, graph, src, dst, stops):
         q = [(src, 0)]  
