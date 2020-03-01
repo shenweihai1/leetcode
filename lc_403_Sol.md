@@ -9,7 +9,7 @@ return: `any(dp[:][len(stones) - 1])`
 
 time complexity: `O(N * N)`
 
-### Solution 2
+### Solution 2： the best way
 `dp[idx]: 在位置idx，所有可能跳下一步的steps`
 
 ```
