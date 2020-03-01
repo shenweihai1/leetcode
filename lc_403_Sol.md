@@ -28,3 +28,27 @@ space complexity: worstest case is `O(N * N)`
 
 ### Solution 3, recursive method
 https://leetcode.com/problems/frog-jump/discuss/522990/Simple-Python-solution-with-lru_cache
+
+### Set operation
+reference: https://docs.python.org/2/library/sets.html
+
+```
+# set structure is implemented via hash
+# init a set
+u = set()
+u = {2}
+u = set([1, 2, 3])
+
+# loop the set
+for _ in u:
+    pass
+
+# check the existence
+# time complexity nearly is O(1)
+2 in u
+
+# union
+a = {3}
+a | u
+{2} | u
+```

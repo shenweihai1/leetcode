@@ -2,7 +2,6 @@
 """
 1. element in [] 操作比较慢，可以直接转换为hash, element in {}
 2. hash中如果数量过多，速度会非常慢，比如该题中，dp变量最开始使用hash表示，最终数量在两万，超时。最后转换为二维数组实现
-3. Python 果然慢如果用其他语言提交第一次就可以提交成功了
 """
 # Time complexity: O(N * N)
 class Solution(object):
